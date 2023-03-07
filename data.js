@@ -75,13 +75,13 @@ const products = [
     {name:'shirt', 
     detail:'Lorem ipsum dolor sit amet consectetur',
     cat: 'fashion', 
-    price: 40, 
+    price: 30, 
     imageUrl: 'https://unsplash.com/photos/7cERndkOyDw' },
 
     {name:'trouser', 
     detail:'Lorem ipsum dolor sit amet consectetur',
     cat: 'fashion', 
     price: 70, 
-    imageUrl: 'https://www.istockphoto.com/photo/beautiful-denim-pants-gm639511940-115301581?phrase=trousers' },
+    imageUrl: 'https://www.istockphoto.com/photo/beautiful-denim-pants-gm639511940-115301581?phrase=trousers'},
 
 ];
