@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&family=League+Gothic&family=Permanent+Marker&family=Poppins&family=Press+Start+2P&family=Roboto&family=Russo+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+button {
+  border: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: rgb(196, 195, 195);
+}
+
+input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+select {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 0.5rem;
+  font-style: bold;
+}
+.option {
+  padding: 1rem;
+  font-style: bold;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+i {
+  margin: 10px;
+  display: inline-block;
+}
+#search {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 500px;
+}
+.form {
+  display: flex;
+}
+
+.products-container {
+  margin-top: 1rem auto;
+  background-color: rgb(148, 146, 146);
+  padding: 5rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.product-box {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 3px rgba(102, 98, 98, 0.196);
+  background-color: white;
+}
+
+.product__img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__info h3 {
+  color: rgb(58, 58, 58);
+  justify-self: center;
+  text-align: center;
+}
+.product__info p {
+  font-size: 14px;
+  margin: 0.2rem;
+  color: grey;
+}
+.prodeuct__category {
+  text-align: center;
+  background-color: orange;
+  width: 80px;
+  border-radius: 5px;
+}
+#buy {
+  border: 1px solid rgba(133, 130, 130, 0.423);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: linear-gradient(
+    to top left rgb(121, 224, 30) 0% rgb(199, 184, 24) 100%
+  );
+  padding: 0.5rem 4rem;
+}
+
+.hidden {
+  display: none;
+}
