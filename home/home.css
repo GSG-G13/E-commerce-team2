@@ -238,10 +238,9 @@ strong {
 
 .slide {
   width: 20%;
-  height : calc(100vh - 60px);
+  height: calc(100vh - 60px);
   transition: 1s;
   position: relative;
-  
 }
 
 .slide img {
@@ -265,7 +264,7 @@ strong {
     rgba(7, 5, 23, 0.9529061624649859) 29%,
     rgba(10, 10, 13, 0.4150910364145658) 57%
   );
-  padding: 3rem
+  padding: 3rem;
 }
 
 .slider .text h2 {
@@ -293,15 +292,15 @@ strong {
 }
 @media (max-width: 600px) {
   .slides,
-  .landing{
+  .landing {
     height: 500px;
   }
-  .slider .text{
+  .slider .text {
     justify-content: flex-start;
     padding: 1rem;
   }
   .slider .text h2,
-  .slider .text p{
+  .slider .text p {
     width: 80%;
   }
 }
@@ -530,7 +529,7 @@ strong {
   overflow-y: scroll;
   border: 1px solid rgba(195, 192, 192, 0.625);
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
   height: 460px;
   box-shadow: inset 0 0 5px 5px rgba(197, 191, 191, 0.235);
   background-color: rgb(231, 234, 234);
