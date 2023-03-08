@@ -104,10 +104,9 @@ let products = JSON.parse(localStorage.getItem('products'))
 if(products === null) {
   products = []
 }
+console.log(products);
 
 
-let arr = JSON.parse(localStorage.getItem('products')) 
-console.log(arr);
 const renderProduct = function ({ name, detail, price, imageUrl, cat }) {
   return `
   <div class="product-box"> 
@@ -131,6 +130,7 @@ const renderCartProduct = function ({ name, detail, price }) {
       <button><i class="fa-solid fa-trash fa-2x"></i></button>
     </li>`;
 };
+
 products.forEach((prod) =>
   productsContainer.insertAdjacentHTML("afterbegin", renderProduct(prod))
 );
