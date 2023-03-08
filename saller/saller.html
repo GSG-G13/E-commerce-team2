@@ -6,8 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products - Saller</title>
+  
   <link rel="stylesheet" href="./saller.css">
   <link rel="stylesheet" href="../home/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+  <script src="../home/home.js" defer></script>
   <script src="./saller.js" defer></script>
 </head>
 
@@ -17,7 +21,7 @@
     <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
       <i class="fa fa-bars"></i>
     </label>
-    <a href="#" class="logo">
+    <a href="../index.html" class="logo">
       <div id="logo"><i class="fa-brands fa-product-hunt">roducts</i>
       </div>
     </a>
@@ -45,7 +49,7 @@
           </svg></a>
       </li>
       <!-- <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li> -->
-      <li><a href="#" class="nav-links seller-btn">Go as a seller</a></li>
+      <li><a href="./saller/saller.html" class="nav-links seller-btn">Go as a seller</a></li>
 
     </ul>
   </nav>
@@ -59,18 +63,22 @@
       </div>
 
       <div>
-        <input type="text" id="price" placeholder="Product Price">
+        <input type="text" id="productPrice" placeholder="Product Price">
       </div>
 
       <div>
-        <input type="text" id="image" placeholder="Product Image Url">
+        <input type="text" id="productCategory" placeholder="Product Category">
       </div>
 
-      <textarea name="details" id="details" placeholder="Product Details"></textarea>
+      <div>
+        <input type="text" id="productImage" placeholder="Product Image Url">
+      </div>
+
+      <textarea name="details" id="productDetails" placeholder="Product Details"></textarea>
 
       <div class="btn-order">
-        <button class="cancel-order">Cancel</button>
-        <button class="submit-order">Submit</button>
+        <input type="button" id="cancel-product" value="Cancle"><a href="../index.html"></a></button>
+        <input type="submit" id="submit-product"></input>
       </div>
     </form>
   </section>
