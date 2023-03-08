@@ -40,29 +40,53 @@
         </ul>
       </nav>
 
-      <section id="products">
-        <div id="control--panel"></div>
-        <div class="products-container">
-          <!-- <div class="product-box">
-            <div class="product__head">
-              <img
-                class="product__img"
-                src="https://picsum.photos/250"
-                alt="product-pic"
-              />
-            </div>
-            <div class="product__info">
-              <h3>iPhone 13 proMax</h3>
-              <h5 class="prodeuct__category">Electronics</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
-                veniam.
-              </p>
-              <h3 class="prodeuct__price">400$</h3>
-              <button id="buy">Buy Now</button>
-            </div>
-          </div> -->
+      <section id="products-section">
+        <!-- <div id="control--panel"></div> -->
+  
+    <div class="filter-container">
+      <select name="tag" id="category">
+        <option value="0">Choose By Category</option>
+        <option class="option" value="mobile">Mobiles</option>
+        <option class="option" value="clothes">Clothes</option>
+        <option class="option" value="smart">Smart TV</option>
+        <option class="option" value="home">Home</option>
+        <option class="option" value="beauty">Beauty</option>
+        <option value="" disabled="true">Choose By Price</option>
+        <option class="option" value="101">1 - 100</option>
+        <option class="option" value="201">100 - 200</option>
+        <option class="option" value="301">200 - 300</option>
+        <option class="option" value="401">300 - 400</option>
+        <option class="option" value="501">400 - 500</option>
+        <option class="option" value="601">500 - 600</option>
+      </select>
+      <label for="search">
+        <input type="text" name="search" id="search" /><i
+          class="fa-solid fa-magnifying-glass"
+        ></i>
+      </label>
+    </div>
+    <div class="products-container">
+      <!-- <div class="product-box">
+        <div class="product__head">
+          <img
+            class="product__img"
+            src="https://picsum.photos/250"
+            alt="product-pic"
+          />
         </div>
+        <div class="product__info">
+          <h3>iPhone 13 proMax</h3>
+          <h5 class="prodeuct__category">Electronics</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
+            veniam.
+          </p>
+          <h3 class="prodeuct__price">400$</h3>
+          <button id="buy">Buy Now</button>
+        </div>
+      </div> -->
+    </div>
       </section>
+
 </body>
 </html>
