@@ -112,16 +112,8 @@ strong {
 .navbar {
   font-size: 16px;
 
-  background: #000046;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #1cb5e0, #000046);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #1cb5e0, #000046);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 16px;
-  background: linear-gradient(to left, #1cb5e0, #000046);
-
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to left, #1cb5e0 50%, #000046);
   padding-bottom: 10px;
 }
 
@@ -149,9 +141,9 @@ strong {
 }
 
 .seller-btn {
-  color: rgb(255, 255, 255);
+  color: #0d538d;
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 0.35rem;
+  padding: 0.35rem 0.83rem;
   border-radius: 8px;
 }
 .navbar-toggle {
@@ -606,4 +598,51 @@ strong {
 ::-webkit-scrollbar-thumb {
   background: rgb(11, 104, 170);
   border-radius: 10px;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+footer {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0d538d;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-contact p {
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer-contact p:first-of-type {
+  font-weight: bold;
+}
+
+.footer-contact p:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-contact p:not(:last-of-type) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.footer-contact {
+  display: flex;
+  width: 35%;
+  justify-content: space-evenly;
 }
