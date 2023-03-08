@@ -5,6 +5,7 @@ const cartEl = document.getElementById("cart");
 const cartList = document.querySelector(".cart-list");
 const cardBtn = document.querySelector(".fa-cart-shopping");
 const totalCountEl = document.querySelector(".items-count");
+const totalPriceEl = document.querySelector(".total-price");
 setInterval(() => {
   document.getElementById("radio" + counter).checked = true;
   counter++;
@@ -150,11 +151,11 @@ const renderProduct = function ({ name, detail, price, imageUrl, cat }) {
   <div class="product-box"> 
     <img class="product__img" src="${imageUrl}" alt="product-pic">
     <div class="product__info">
-      <h3>${name}</h3>
+      <h3>${name.toUpperCase()}</h3>
         <h5 class="product__category">${cat.toUpperCase()}</h5>
         <p>${detail}</p>
         <h2 class="prodeuct__price">${price}$</h2>
-        <button id="buy">Add to Card</button>
+        <button id="add">Add to Card</button>
     </div>
     </div>`;
 };
@@ -176,13 +177,14 @@ const addtoCartHandler = function (e) {
   const productsEls = Array.from(
     document.querySelectorAll(".product-box")
   ).reverse();
-  if (e.target.id === "buy") {
+  if (e.target.id === "add") {
     product = products.find(
       (_, i) => i === productsEls.indexOf(e.target.closest(".product-box"))
     );
     cartArr.push(product);
     localStorage.setItem("cartItems", JSON.stringify(cartArr));
-    totalPrice = cartArr.map((p) => p.price).reduce((a, b) => a + b);
+    totalPriceEl.textContent =
+      cartArr.map((p) => p.price).reduce((a, b) => a + b) || 0;
     totalCountEl.classList.remove("hidden");
     totalCountEl.textContent = cartArr.length;
     cartList.insertAdjacentHTML("afterbegin", renderCartProduct(product));
