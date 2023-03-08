@@ -15,6 +15,7 @@ const fakeProducts = [
     imageUrl:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6194/6194907_sd.jpg",
   },
+
   {
     name: "Philips Smart TV",
     detail: "Lorem ipsum dolor sit amet consectetur",
@@ -80,7 +81,10 @@ const fakeProducts = [
   },
 ];
 
-localStorage.setItem("products", JSON.stringify(fakeProducts));
+const newProducts = JSON.parse(localStorage.getItem('products'))
+if(newProducts === null){
+  localStorage.setItem('products', JSON.stringify(fakeProducts))
+}
 
 // Start Landing Page
 
