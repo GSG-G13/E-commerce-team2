@@ -408,8 +408,7 @@ strong {
   z-index: 10000;
 }
 
-.cart-header,
-.cart-footer {
+.cart-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,15 +602,23 @@ strong {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
+    width: 90%;
   }
 
   .product-box {
-    width: 230px;
+    width: 220px;
   }
 
   .product__img {
     width: 230px;
     height: 230px;
+  }
+  #search {
+    padding: 0.7rem;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 350px;
   }
 }
 
