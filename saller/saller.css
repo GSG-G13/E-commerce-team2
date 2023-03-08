@@ -57,7 +57,9 @@ h1 {
 	display: flex;
 	gap: 1rem;
 }
-
+.btn-order input{
+	cursor: pointer;
+}
 .saller .btn-order a {
 	text-decoration: none;
 }
