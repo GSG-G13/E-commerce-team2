@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&family=League+Gothic&family=Permanent+Marker&family=Poppins&family=Press+Start+2P&family=Roboto&family=Russo+One&display=swap%27");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--main-color: #31e3ca;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+h1 {
+	font-size: 2.6em;
+	display: flex;
+	color: blue;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	padding: 20px;
+}
+
+#cancel-product {
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	font-size: 15px;
+	background-color: #B2B2B2;
+	color: #fff;
+	text-decoration: none;
+}
+
+#submit-product {
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	font-size: 15px;
+	background-color: #B2B2B2;
+	color: #fff;
+	text-decoration: none;
+	background-color: blue;
+}
+
+
+
+
+
+
+.btn-order {
+	padding-top: 20px;
+	display: flex;
+	gap: 1rem;
+}
+
+.saller .btn-order a {
+	text-decoration: none;
+}
+
+.saller {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 18px;
+	height: 812px;
+}
+
+@media (min-width: 1024px) {
+	.form-order input {
+		margin-bottom: 30px;
+		padding: 30px 30px 25px 50px;
+		font-size: 20px;
+	}
+}
+
+.form-order input {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 40px;
+	padding: 32px 30px 20px 30px;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #B2B2B2;
+	color: #58585D;
+	background-color: #fff;
+}
+
+#productDetails {
+	padding: 10px 20px 50px 30px;
+	outline: none;
+	color: #58585D;
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	#productDetails {
+		width: 100%;
+		height: 170px;
+		font-size: 20px;
+		margin: 10px 0;
+	}
+}
