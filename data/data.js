@@ -75,6 +75,7 @@ const products = [
     detail: "Lorem ipsum dolor sit amet consectetur",
     cat: "mobile",
     price: 500,
-    imageUrl: "https://picsum.photos/270",
+    imageUrl:
+      "https://estore.jawwal.ps/storage/product/2170/2Dwf49jZM2PWQl7BA5h1DAd489d8VIl733pu7tnI.png",
   },
 ];
