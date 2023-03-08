@@ -110,6 +110,7 @@ let products = JSON.parse(localStorage.getItem("products"));
 if (products === null) {
   products = [];
 }
+console.log(products);
 
 let arr = JSON.parse(localStorage.getItem("products"));
 

@@ -16,6 +16,7 @@ form.addEventListener('submit', (e) => {
         price: productPrice.value,
         imageUrl: productImage.value,
     }   
+
     let products = JSON.parse(localStorage.getItem('products'))
     if(products === null){
         products = []
@@ -24,9 +25,9 @@ form.addEventListener('submit', (e) => {
     products.push(product)
     localStorage.setItem('products', JSON.stringify(products))
 
-    // productName.value = ''
-    // productDetails.value = ''
-    // productCategory.value = ''
-    // productPrice.value = ''
-    // productImage.value = ''
+    productName.value = ''
+    productDetails.value = ''
+    productCategory.value = ''
+    productPrice.value = ''
+    productImage.value = ''
 })
