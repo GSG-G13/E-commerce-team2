@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Carter+One&family=League+Gothic&family=Permanent+Marker&family=Poppins&family=Press+Start+2P&family=Roboto&family=Russo+One&display=swap%27');
 * {
     padding: 0;
@@ -12,6 +13,88 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+/* styling for our team section */
+.team-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+}
+.team-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+  padding-top: 20px;
+  font-size: 35px;
+  color: #0D538D;
+}
+
+.cards{
+  padding: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  gap: 1rem
+}
+
+@media(max-width:600px){
+  .cards{
+    padding: 2rem;
+  }
+}
+.card{
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #0D538D;
+  padding: 20px;
+ 
+}
+.card img{
+  width: 100%;
+  height: auto;
+  padding-bottom: 2px;
+}
+span{
+  display: block;
+  color: #6b6b6b;
+  font-size: 0.9rem;
+  padding-top: 2px;
+}
+strong {
+  color: black;
+  font-size: 1rem;
+}
+
+
+.links{
+  margin-top: 32px;
+}
+.links a{
+  display: inline-block;
+  color: #000;
+  margin-right: 10px;
+  transition: 0.3s;
+  }
+  
+.links a:hover{
+      transform: translateY(10px);
+      color: #0D538D;
+  }
+
+
 
 
 .navbar {
