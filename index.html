@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./home/home.css" />
-    <script src="./home/home.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="./home/home.css">
+  <script src="./home/home.js" defer></script>
+
     <title>Home</title>
-  </head>
-  <body>
-    <section id="products">
-      <div id="control--panel"></div>
-      <div class="products-container">
-        <!-- <div class="product-box">
-          <div class="product__head">
-            <img
-              class="product__img"
-              src="https://picsum.photos/250"
-              alt="product-pic"
-            />
-          </div>
-          <div class="product__info">
-            <h3>iPhone 13 proMax</h3>
-            <h5 class="prodeuct__category">Electronics</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
-              veniam.
-            </p>
-            <h3 class="prodeuct__price">400$</h3>
-            <button id="buy">Buy Now</button>
-          </div>
-        </div> -->
-      </div>
-    </section>
-  </body>
+</head>
+<body>
+    <nav class="navbar">
+        <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                <i class="fa fa-bars"></i>
+            </label>
+        <a href="#" class="logo"><div id="logo"><i class="fa-brands fa-product-hunt">roducts</i>
+        </div></a>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Products</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Our Team</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links">Contact Us</a>
+          </li>
+          <li>
+            <a href="#" class="nav-links"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6 9h13.938l.5-2H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1V4H2V2h3a1 1 0 0 1 1 1v6zm0 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg></a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="products">
+        <div id="control--panel"></div>
+        <div class="products-container">
+          <!-- <div class="product-box">
+            <div class="product__head">
+              <img
+                class="product__img"
+                src="https://picsum.photos/250"
+                alt="product-pic"
+              />
+            </div>
+            <div class="product__info">
+              <h3>iPhone 13 proMax</h3>
+              <h5 class="prodeuct__category">Electronics</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
+                veniam.
+              </p>
+              <h3 class="prodeuct__price">400$</h3>
+              <button id="buy">Buy Now</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+</body>
 </html>
