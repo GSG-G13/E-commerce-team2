@@ -146,6 +146,10 @@ const products = [
   },
 ];
 
+localStorage.setItem('products', JSON.stringify(products))
+
+let arr = JSON.parse(localStorage.getItem('products')) 
+console.log(arr);
 const renderProduct = function ({ name, detail, price, imageUrl, cat }) {
   return `
   <div class="product-box"> 
