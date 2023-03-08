@@ -129,18 +129,16 @@ const products = [
 
 const renderProduct = function ({ name, detail, price, imageUrl, cat }) {
   return `
-    <div class="product-box"> 
-    <div  class="product__head">
-      <img class="product__img" src="${imageUrl}" alt="product-pic">
+  <div class="product-box"> 
+    <img class="product__img" src="${imageUrl}" alt="product-pic">
+    <div class="product__info">
+      <h3>${name}</h3>
+        <h5 class="product__category">${cat.toUpperCase()}</h5>
+        <p>${detail}</p>
+        <h2 class="prodeuct__price">${price}$</h2>
+        <button id="buy">Add to Card</button>
     </div>
-      <div class="product__info">
-        <h3>${name}</h3>
-          <h5 class="prodeuct__category">${cat.toUpperCase()}</h5>
-          <p>${detail}</p>
-          <h3 class="prodeuct__price">${price}$</h3>
-          <button id="buy">Add to Card</button>
-      </div>
-      </div>`;
+    </div>`;
 };
 products.forEach((prod) =>
   productsContainer.insertAdjacentHTML("afterbegin", renderProduct(prod))
