@@ -217,32 +217,16 @@ strong {
 /* Start Landing Page */
 .landing {
   width: 100%;
-  padding: 3rem 10%;
-}
-
-@media (max-width: 800px) {
-  .landing {
-    width: 100%;
-    padding: 3rem 3%;
-  }
-}
-
-@media (max-width: 600px) {
-  .landing {
-    width: 100%;
-    padding: 3rem 2%;
-  }
+  height: calc(100vh - 60px);
 }
 
 .slider {
   overflow: hidden;
-  border-radius: 10px;
-  background-color: blue;
 }
 
 .slides {
   width: 600%;
-  height: 500px;
+  height: 100%;
   display: flex;
   position: relative;
 }
@@ -253,9 +237,10 @@ strong {
 
 .slide {
   width: 20%;
-  height: 100%;
+  height : calc(100vh - 60px);
   transition: 1s;
   position: relative;
+  
 }
 
 .slide img {
@@ -279,6 +264,7 @@ strong {
     rgba(7, 5, 23, 0.9529061624649859) 29%,
     rgba(10, 10, 13, 0.4150910364145658) 57%
   );
+  padding: 3rem
 }
 
 .slider .text h2 {
@@ -304,7 +290,20 @@ strong {
   background-color: var(--main-color);
   color: #fff;
 }
-
+@media (max-width: 600px) {
+  .slides,
+  .landing{
+    height: 500px;
+  }
+  .slider .text{
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  .slider .text h2,
+  .slider .text p{
+    width: 80%;
+  }
+}
 .navigate-manual {
   display: flex;
   width: 108%;
