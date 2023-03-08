@@ -5,6 +5,8 @@ const cartList = document.querySelector(".cart-list");
 const cardBtn = document.querySelector(".fa-cart-shopping");
 const totalCountEl = document.querySelector(".items-count");
 const totalPriceEl = document.querySelector(".total-price");
+const select = document.querySelector("select");
+const inputSearch = document.querySelector("#search");
 let counter = 1;
 let cartArr = [];
 setInterval(() => {
@@ -35,7 +37,7 @@ const renderProduct = function ({ name, detail, price, imageUrl, cat }) {
 };
 const renderCartProduct = function ({ name, detail, price }) {
   return `<li class="cart-product-box">
-      <div>
+      <div class= 'cart-product-info-box'>
       <h4>${name}</h4>
       <p>${detail}</p>
       <h3>${price}</h3>
@@ -68,5 +70,52 @@ const addtoCartHandler = function (e) {
 const showList = () => {
   cartEl.classList.toggle("hidden");
 };
+const searchProducts = function () {
+  if (select.value) {
+    productsContainer.innerHTML = "";
+    products
+      .filter(
+        (prod) =>
+          prod.cat === select.value ||
+          (prod.price > +select.value - 99 && prod.price <= +select.value)
+      )
+      .forEach((prod) =>
+        productsContainer.insertAdjacentHTML("afterbegin", renderProduct(prod))
+      );
+  }
+  if (inputSearch.value) {
+    productsContainer.innerHTML = "";
+    products
+      .filter((prod) =>
+        prod.name.toLowerCase().includes(inputSearch.value.toLowerCase())
+      )
+      .forEach((prod) =>
+        productsContainer.insertAdjacentHTML("afterbegin", renderProduct(prod))
+      );
+  }
+  if (inputSearch.value && select.value !== "0") {
+    productsContainer.innerHTML = "";
+    products
+      .filter((prod) =>
+        prod.name.toLowerCase().includes(inputSearch.value.toLowerCase())
+      )
+      .filter((prod) => prod.cat === select.value)
+      .forEach((p) =>
+        productsContainer.insertAdjacentHTML("afterbegin", renderProduct(p))
+      );
+  }
+};
+cartList.addEventListener("click", function (e) {
+  const cartEls = Array.from(document.querySelectorAll(".cart-product-box"));
+  e.target.closest("li").remove();
+
+  // cartArr
+  //   .filter((_, i) => i !== cartEls.indexOf(e.target.closest("li")))
+  //   .forEach((pro) =>
+  //     cartList.insertAdjacentHTML("afterbegin", renderCartProduct(pro))
+  //   );
+  totalCountEl.textContent = cartArr.length;
+});
 productsContainer.addEventListener("click", addtoCartHandler);
 cardBtn.addEventListener("click", showList);
+search.addEventListener("click", searchProducts);

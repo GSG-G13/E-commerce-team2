@@ -1,127 +1,73 @@
 const products = [
   {
-    name: "Closed-Back Headphones",
+    name: "Sony Experia Z",
     detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "smart",
-    price: 50,
+    cat: "mobile",
+    price: 150,
     imageUrl:
-      "https://images.unsplash.com/photo-1585298723682-7115561c51b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+      "https://fdn.gsmarena.com/imgroot/reviews/22/sony-xperia-5-iv/lifestyle/-1024w2/gsmarena_003.jpg",
   },
-
   {
-    name: "Sony Camera",
-    detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "smart",
-    price: 750,
-    imageUrl:
-      "https://images.unsplash.com/photo-1606986628470-26a67fa4730c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-  },
-
-  {
-    name: "iphone 12",
+    name: "Toshiba",
     detail: "Lorem ipsum dolor sit amet consectetur",
     cat: "smart",
     price: 500,
-    imageUrl:
-      "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    imageUrl: "https://picsum.photos/270",
   },
-
   {
-    name: "laptop",
-    detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "smart",
-    price: 1000,
-    imageUrl:
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80",
-  },
-
-  {
-    name: "shoes",
-    detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "fashion",
-    price: 40,
-    imageUrl:
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-  },
-
-  {
-    name: "shirt",
-    detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "fashion",
-    price: 40,
-    imageUrl:
-      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80",
-  },
-
-  {
-    name: "trouser",
-    detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "fashion",
-    price: 70,
-    imageUrl:
-      "https://www.istockphoto.com/photo/beautiful-denim-pants-gm639511940-115301581?phrase=trousers",
-  },
-
-  {
-    name: "Closed-Back Headphones",
-    detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "smart",
-    price: 50,
-    imageUrl:
-      "https://images.unsplash.com/photo-1585298723682-7115561c51b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-  },
-
-  {
-    name: "sony camera",
-    detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "smart",
-    price: 750,
-    imageUrl:
-      "https://images.unsplash.com/photo-1606986628470-26a67fa4730c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-  },
-
-  {
-    name: "iphone 12",
+    name: "iPhone 12 Promax",
     detail: "Lorem ipsum dolor sit amet consectetur",
     cat: "smart",
     price: 500,
-    imageUrl:
-      "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    imageUrl: "https://picsum.photos/270",
   },
-
   {
-    name: "laptop",
+    name: "lg",
     detail: "Lorem ipsum dolor sit amet consectetur",
     cat: "smart",
-    price: 1000,
-    imageUrl:
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80",
+    price: 250,
+    imageUrl: "https://picsum.photos/270",
   },
-
   {
-    name: "shoes",
+    name: "iPhone 12 Promax",
     detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "fashion",
-    price: 40,
-    imageUrl:
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    cat: "clothes",
+    price: 300,
+    imageUrl: "https://picsum.photos/270",
   },
-
   {
-    name: "shirt",
+    name: "Samsung Galaxy Ultra 13",
     detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "fashion",
-    price: 30,
-    imageUrl:
-      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80",
+    cat: "mobile",
+    price: 500,
+    imageUrl: "https://picsum.photos/270",
   },
-
   {
-    name: "trouser",
+    name: "Washing Machine",
     detail: "Lorem ipsum dolor sit amet consectetur",
-    cat: "fashion",
-    price: 70,
-    imageUrl:
-      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80",
+    cat: "home",
+    price: 100,
+    imageUrl: "https://picsum.photos/270",
+  },
+  {
+    name: "iPhone 12 Promax",
+    detail: "Lorem ipsum dolor sit amet consectetur",
+    cat: "beauty",
+    price: 450,
+    imageUrl: "https://picsum.photos/270",
+  },
+  {
+    name: "Nice Winter Jacket",
+    detail: "Lorem ipsum dolor sit amet consectetur",
+    cat: "clothes",
+    price: 400,
+    imageUrl: "https://picsum.photos/270",
+  },
+  {
+    name: "iPhone 12 Promax",
+    detail: "Lorem ipsum dolor sit amet consectetur",
+    cat: "mobile",
+    price: 500,
+    imageUrl: "https://picsum.photos/270",
   },
 ];
