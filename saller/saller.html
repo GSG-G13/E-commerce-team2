@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Saller</title>
+  <link rel="stylesheet" href="./saller.css">
+  <link rel="stylesheet" href="../home/home.css">
+  <script src="./saller.js" defer></script>
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+      <i class="fa fa-bars"></i>
+    </label>
+    <a href="#" class="logo">
+      <div id="logo"><i class="fa-brands fa-product-hunt">roducts</i>
+      </div>
+    </a>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="#" class="nav-links">Home</a>
+      </li>
+      <li>
+        <a href="#products" class="nav-links">Products</a>
+      </li>
+      <li>
+        <a href="#team" class="nav-links">Our Team</a>
+      </li>
+      <li>
+        <a href="#footer" class="nav-links">Contact Us</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+            height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              d="M6 9h13.938l.5-2H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1V4H2V2h3a1 1 0 0 1 1 1v6zm0 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+              fill="rgba(255,255,255,0.7019607843137254)" />
+          </svg></a>
+      </li>
+      <!-- <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li> -->
+      <li><a href="#" class="nav-links seller-btn">Go as a seller</a></li>
+
+    </ul>
+  </nav>
+  <!-- End Navbar -->
+
+  <section class="saller">
+    <h1>Contact Information </h1>
+    <form action="" class="form-order">
+      <div>
+        <input type="text" id="productName" placeholder="Product Name">
+      </div>
+
+      <div>
+        <input type="text" id="price" placeholder="Product Price">
+      </div>
+
+      <div>
+        <input type="text" id="image" placeholder="Product Image Url">
+      </div>
+
+      <textarea name="details" id="details" placeholder="Product Details"></textarea>
+
+      <div class="btn-order">
+        <button class="cancel-order">Cancel</button>
+        <button class="submit-order">Submit</button>
+      </div>
+    </form>
+  </section>
+
+
+
+  <!-- Footer start -->
+  <footer>
+    <div class="footer-logo" id="footer">
+      <a href="#" class="logo">
+        <div id="logo"><i class="fa-brands fa-product-hunt">roducts</i>
+        </div>
+      </a>
+    </div>
+    <div class="footer-contact">
+      <p>Palestine-Gaza</p>
+      <p>2558550</p>
+      <p>products@gmail.com</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+</body>
+
+</html>
