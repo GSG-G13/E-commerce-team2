@@ -57,8 +57,8 @@ const addtoCartHandler = function (e) {
     product = products.find(
       (_, i) => i === productsEls.indexOf(e.target.closest(".product-box"))
     );
-    cartArr.push(product);
-    localStorage.setItem("cartItems", JSON.stringify(cartArr));
+    const newArray = addToCart(cartArr, product);
+    localStorage.setItem("cartItems", JSON.stringify(newArray));
     totalPriceEl.textContent =
       cartArr.map((p) => p.price).reduce((a, b) => a + b) || 0;
     totalCountEl.classList.remove("hidden");
