@@ -4,17 +4,29 @@ let productImage = document.getElementById('productImage')
 let productDetails = document.getElementById('productDetails')
 let productCategory = document.getElementById('productCategory')
 let submitBtn = document.getElementById('submit-product')
+let form = document.querySelector('form')
 
-let newArr;
-submitBtn.addEventListener('click', () => {
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
     const product = {
         name: productName.value,
         detail: productDetails.value,
         cat: productCategory.value,
         price: productPrice.value,
-        imageUrl: productPrice.productImage,
+        imageUrl: productImage.value,
+    }   
+    let products = JSON.parse(localStorage.getItem('products'))
+    if(products === null){
+        products = []
     }
-    // newArr = [...JSON.parse(localStorage.getItem('products')), JSON.stringify(product)]
-    localStorage.setItem('products', [...JSON.parse(localStorage.getItem('products')), product])
-    console.log(JSON.parse(localStorage.getItem('products')).push(product));
+    
+    products.push(product)
+    localStorage.setItem('products', JSON.stringify(products))
+
+    // productName.value = ''
+    // productDetails.value = ''
+    // productCategory.value = ''
+    // productPrice.value = ''
+    // productImage.value = ''
 })
