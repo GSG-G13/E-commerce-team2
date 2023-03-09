@@ -100,6 +100,7 @@ const select = document.querySelector("select");
 const inputSearch = document.querySelector("#search");
 let counter = 1;
 let cartArr = [];
+
 setInterval(() => {
   document.getElementById("radio" + counter).checked = true;
   counter++;
