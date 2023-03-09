@@ -117,9 +117,9 @@ let products = JSON.parse(localStorage.getItem("products"));
 if (products === null) {
   products = [];
 }
-console.log(products);
+// console.log(products);
 
-let arr = JSON.parse(localStorage.getItem("products"));
+// let arr = JSON.parse(localStorage.getItem("products"));
 
 const renderProduct = function ({ name, detail, price, imageUrl, cat }) {
   return `
